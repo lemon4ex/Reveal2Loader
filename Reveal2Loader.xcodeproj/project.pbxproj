@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C91FD47B221B45D20089920A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C91FD47A221B45D20089920A /* Foundation.framework */; };
+		C91FD48F221B45D30089920A /* Reveal2Loader.h in Headers */ = {isa = PBXBuildFile; fileRef = C91FD48E221B45D30089920A /* Reveal2Loader.h */; };
+		C91FD491221B45D30089920A /* Reveal2Loader.m in Sources */ = {isa = PBXBuildFile; fileRef = C91FD490221B45D30089920A /* Reveal2Loader.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C91FD477221B45D20089920A /* Reveal2Loader.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Reveal2Loader.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		C91FD47A221B45D20089920A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C91FD47F221B45D20089920A /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		C91FD480221B45D20089920A /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		C91FD482221B45D20089920A /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		C91FD486221B45D20089920A /* Reveal2Loader.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Reveal2Loader.plist; path = Package/Library/PreferenceLoader/Preferences/Reveal2Loader.plist; sourceTree = "<group>"; };
+		C91FD487221B45D20089920A /* Reveal2LoaderIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Reveal2LoaderIcon.png; path = Package/Library/PreferenceLoader/Preferences/Reveal2LoaderIcon.png; sourceTree = "<group>"; };
+		C91FD488221B45D20089920A /* Reveal2LoaderIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Reveal2LoaderIcon@2x.png"; path = "Package/Library/PreferenceLoader/Preferences/Reveal2LoaderIcon@2x.png"; sourceTree = "<group>"; };
+		C91FD489221B45D20089920A /* Reveal2Loader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Reveal2Loader-Prefix.pch"; sourceTree = "<group>"; };
+		C91FD48A221B45D20089920A /* preinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = preinst; path = Package/DEBIAN/preinst; sourceTree = "<group>"; };
+		C91FD48B221B45D30089920A /* postinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = postinst; path = Package/DEBIAN/postinst; sourceTree = "<group>"; };
+		C91FD48C221B45D30089920A /* postrm */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = postrm; path = Package/DEBIAN/postrm; sourceTree = "<group>"; };
+		C91FD48D221B45D30089920A /* prerm */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = prerm; path = Package/DEBIAN/prerm; sourceTree = "<group>"; };
+		C91FD48E221B45D30089920A /* Reveal2Loader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reveal2Loader.h; sourceTree = "<group>"; };
+		C91FD490221B45D30089920A /* Reveal2Loader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Reveal2Loader.m; sourceTree = "<group>"; };
+		C91FD494221B45D30089920A /* Reveal2Loader.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Reveal2Loader.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/Reveal2Loader.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C91FD472221B45D20089920A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C91FD47B221B45D20089920A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C91FD46C221B45D20089920A = {
+			isa = PBXGroup;
+			children = (
+				C91FD47C221B45D20089920A /* Reveal2Loader */,
+				C91FD479221B45D20089920A /* Frameworks */,
+				C91FD478221B45D20089920A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C91FD478221B45D20089920A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C91FD477221B45D20089920A /* Reveal2Loader.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C91FD479221B45D20089920A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C91FD47A221B45D20089920A /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C91FD47C221B45D20089920A /* Reveal2Loader */ = {
+			isa = PBXGroup;
+			children = (
+				C91FD48E221B45D30089920A /* Reveal2Loader.h */,
+				C91FD490221B45D30089920A /* Reveal2Loader.m */,
+				C91FD47D221B45D20089920A /* Package */,
+				C91FD481221B45D20089920A /* Supporting Files */,
+			);
+			path = Reveal2Loader;
+			sourceTree = "<group>";
+		};
+		C91FD47D221B45D20089920A /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				C91FD47E221B45D20089920A /* DEBIAN */,
+				C91FD483221B45D20089920A /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		C91FD47E221B45D20089920A /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				C91FD47F221B45D20089920A /* control */,
+				C91FD480221B45D20089920A /* control.txt */,
+				C91FD48A221B45D20089920A /* preinst */,
+				C91FD48B221B45D30089920A /* postinst */,
+				C91FD48C221B45D30089920A /* postrm */,
+				C91FD48D221B45D30089920A /* prerm */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		C91FD481221B45D20089920A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C91FD482221B45D20089920A /* PackageVersion.plist */,
+				C91FD489221B45D20089920A /* Reveal2Loader-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C91FD483221B45D20089920A /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				C91FD484221B45D20089920A /* PreferenceLoader */,
+				C91FD492221B45D30089920A /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		C91FD484221B45D20089920A /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				C91FD485221B45D20089920A /* Preferences */,
+			);
+			name = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		C91FD485221B45D20089920A /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				C91FD486221B45D20089920A /* Reveal2Loader.plist */,
+				C91FD487221B45D20089920A /* Reveal2LoaderIcon.png */,
+				C91FD488221B45D20089920A /* Reveal2LoaderIcon@2x.png */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		C91FD492221B45D30089920A /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				C91FD493221B45D30089920A /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		C91FD493221B45D30089920A /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				C91FD494221B45D30089920A /* Reveal2Loader.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C91FD473221B45D20089920A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C91FD48F221B45D30089920A /* Reveal2Loader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C91FD476221B45D20089920A /* Reveal2Loader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C91FD497221B45D30089920A /* Build configuration list for PBXNativeTarget "Reveal2Loader" */;
+			buildPhases = (
+				C91FD471221B45D20089920A /* Sources */,
+				C91FD472221B45D20089920A /* Frameworks */,
+				C91FD473221B45D20089920A /* Headers */,
+				C91FD474221B45D20089920A /* ShellScript */,
+				C91FD475221B45D20089920A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Reveal2Loader;
+			productName = Reveal2Loader;
+			productReference = C91FD477221B45D20089920A /* Reveal2Loader.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C91FD46D221B45D20089920A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				TargetAttributes = {
+					C91FD476221B45D20089920A = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = C91FD470221B45D20089920A /* Build configuration list for PBXProject "Reveal2Loader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C91FD46C221B45D20089920A;
+			productRefGroup = C91FD478221B45D20089920A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C91FD476221B45D20089920A /* Reveal2Loader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C91FD474221B45D20089920A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\n# rm -rf \"${PROJECT_DIR}/${TARGET_NAME}/Package/usr/bin/*\"\n# cp -rf \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/PalmRiskSvr\" \"${PROJECT_DIR}/${TARGET_NAME}/Package/usr/bin/\"\n\n# 自动更新deb包版本号\necho $CONFIGURATION\nif [ \"Release\" == \"${CONFIGURATION}\" ]\nthen\npackInfoPlist=\"${PROJECT_DIR}/${TARGET_NAME}/PackageVersion.plist\"\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print PackageRevision\" \"${packInfoPlist}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :PackageRevision $buildNumber\" \"${packInfoPlist}\"\necho \"build number increase\"\nfi";
+		};
+		C91FD475221B45D20089920A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/EasyDev/bin/md --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C91FD471221B45D20089920A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C91FD491221B45D30089920A /* Reveal2Loader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C91FD495221B45D30089920A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EasyDevPath = /opt/EasyDev;
+				EasyDevTheosPath = /opt/theos;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevPath)/frameworks",
+					"$(EasyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevPath)/include",
+					"$(EasyDevTheosPath)/vendor/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevTheosPath)/vendor/lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C91FD496221B45D30089920A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EasyDevPath = /opt/EasyDev;
+				EasyDevTheosPath = /opt/theos;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevPath)/frameworks",
+					"$(EasyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevPath)/include",
+					"$(EasyDevTheosPath)/vendor/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevTheosPath)/vendor/lib",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		C91FD498221B45D30089920A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EasyDevBuildPackageOnAnyBuild = NO;
+				EasyDevClearUiCacheOnInstall = NO;
+				EasyDevCopyOnBuild = NO;
+				EasyDevDeviceIP = "";
+				EasyDevDevicePort = "";
+				EasyDevInstallOnAnyBuild = 0;
+				EasyDevInstallOnProfiling = 0;
+				EasyDevUsePackageVersionPList = YES;
+				EasyDevkillProcessOnInstall = SpringBoard;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Reveal2Loader/Reveal2Loader-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevTheosPath)/vendor/include",
+				);
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C91FD499221B45D30089920A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EasyDevBuildPackageOnAnyBuild = NO;
+				EasyDevClearUiCacheOnInstall = NO;
+				EasyDevCopyOnBuild = NO;
+				EasyDevDeviceIP = "";
+				EasyDevDevicePort = "";
+				EasyDevInstallOnAnyBuild = 0;
+				EasyDevInstallOnProfiling = 0;
+				EasyDevUsePackageVersionPList = YES;
+				EasyDevkillProcessOnInstall = SpringBoard;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Reveal2Loader/Reveal2Loader-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevTheosPath)/vendor/include",
+				);
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C91FD470221B45D20089920A /* Build configuration list for PBXProject "Reveal2Loader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C91FD495221B45D30089920A /* Release */,
+				C91FD496221B45D30089920A /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C91FD497221B45D30089920A /* Build configuration list for PBXNativeTarget "Reveal2Loader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C91FD498221B45D30089920A /* Release */,
+				C91FD499221B45D30089920A /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C91FD46D221B45D20089920A /* Project object */;
+}

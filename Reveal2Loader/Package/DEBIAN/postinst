@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# This script is executed AFTER the Debian package is INSTALLED
+# For information about this file, see http://www.debian.org/doc/manuals/debian-faq/ch-pkg_basics.en.html#s-maintscripts.
+

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Reveal2Loader' target in the 'Reveal2Loader' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
