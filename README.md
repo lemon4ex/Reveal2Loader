@@ -7,5 +7,7 @@ The iOS11 jailbroken device does not take effect after installing Reveal2Loader.
 
 This code compatible with iOS11 jailbroken device now.
 
+![QQ20190219-050112@2x.png](https://github.com/lemon4ex/Reveal2Loader/blob/master/QQ20190219-050112@2x.png)
+
 ### Thanks
 * original version: https://github.com/zidaneno5/Reveal2Loader
