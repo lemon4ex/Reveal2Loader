@@ -3,3 +3,4 @@
 # This script is executed AFTER the Debian package is REMOVED
 # For information about this file, see http://www.debian.org/doc/manuals/debian-faq/ch-pkg_basics.en.html#s-maintscripts.
 
+rm -rf "/Library/MobileSubstrate/DynamicLibraries/RevealServer"

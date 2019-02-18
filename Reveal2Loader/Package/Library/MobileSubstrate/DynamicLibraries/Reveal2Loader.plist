@@ -4,14 +4,10 @@
 <dict>
 	<key>Filter</key>
 	<dict>
-		<key>Classes</key>
-		<array/>
-		<key>CoreFoundationVersion</key>
-		<array/>
-		<key>Executables</key>
-		<array/>
 		<key>Bundles</key>
-		<array/>
+		<array>
+			<string>com.apple.UIKit</string>
+		</array>
 	</dict>
 </dict>
 </plist>

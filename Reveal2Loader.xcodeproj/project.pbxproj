@@ -19,8 +19,8 @@
 		C91FD480221B45D20089920A /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
 		C91FD482221B45D20089920A /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
 		C91FD486221B45D20089920A /* Reveal2Loader.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Reveal2Loader.plist; path = Package/Library/PreferenceLoader/Preferences/Reveal2Loader.plist; sourceTree = "<group>"; };
-		C91FD487221B45D20089920A /* Reveal2LoaderIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Reveal2LoaderIcon.png; path = Package/Library/PreferenceLoader/Preferences/Reveal2LoaderIcon.png; sourceTree = "<group>"; };
-		C91FD488221B45D20089920A /* Reveal2LoaderIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Reveal2LoaderIcon@2x.png"; path = "Package/Library/PreferenceLoader/Preferences/Reveal2LoaderIcon@2x.png"; sourceTree = "<group>"; };
+		C91FD487221B45D20089920A /* reveal-logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "reveal-logo@3x.png"; path = "Package/Library/PreferenceLoader/Preferences/reveal-logo@3x.png"; sourceTree = "<group>"; };
+		C91FD488221B45D20089920A /* reveal-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "reveal-logo@2x.png"; path = "Package/Library/PreferenceLoader/Preferences/reveal-logo@2x.png"; sourceTree = "<group>"; };
 		C91FD489221B45D20089920A /* Reveal2Loader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Reveal2Loader-Prefix.pch"; sourceTree = "<group>"; };
 		C91FD48A221B45D20089920A /* preinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = preinst; path = Package/DEBIAN/preinst; sourceTree = "<group>"; };
 		C91FD48B221B45D30089920A /* postinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = postinst; path = Package/DEBIAN/postinst; sourceTree = "<group>"; };
@@ -131,8 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				C91FD486221B45D20089920A /* Reveal2Loader.plist */,
-				C91FD487221B45D20089920A /* Reveal2LoaderIcon.png */,
-				C91FD488221B45D20089920A /* Reveal2LoaderIcon@2x.png */,
+				C91FD487221B45D20089920A /* reveal-logo@3x.png */,
+				C91FD488221B45D20089920A /* reveal-logo@2x.png */,
 			);
 			name = Preferences;
 			sourceTree = "<group>";
@@ -411,6 +411,7 @@
 				C91FD499221B45D30089920A /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,209 +1,103 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>entry</key>
-	<dict>
-		<key>cell</key>
-		<string>PSLinkCell</string>
-		<key>icon</key>
-		<string>Reveal2LoaderIcon.png</string>
-		<key>label</key>
-		<string>Reveal2Loader</string>
-	</dict>
-	<key>items</key>
-	<array>
-		<dict>
-			<key>cell</key>
-			<string>PSGroupCell</string>
-			<key>isStaticText</key>
-			<true/>
-			<key>label</key>
-			<string>Text and Secure Cells</string>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSEditTextCell</string>
-			<key>default</key>
-			<string></string>
-			<key>defaults</key>
-			<string>net.ymlab.dev.Reveal2Loader</string>
-			<key>key</key>
-			<string>EditTextCell1</string>
-			<key>label</key>
-			<string>Text</string>
-			<key>placeholder</key>
-			<string>Any Text Here</string>
-			<key>PostNotification</key>
-			<string>net.ymlab.dev.Reveal2Loader-preferencesChanged</string>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSSecureEditTextCell</string>
-			<key>default</key>
-			<string></string>
-			<key>defaults</key>
-			<string>net.ymlab.dev.Reveal2Loader</string>
-			<key>key</key>
-			<string>SecureEditTextCell2</string>
-			<key>label</key>
-			<string>Secure</string>
-			<key>PostNotification</key>
-			<string>net.ymlab.dev.Reveal2Loader-preferencesChanged</string>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSGroupCell</string>
-			<key>footerText</key>
-			<string>Place text here to provide additional information about the cells above.</string>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSGroupCell</string>
-			<key>isStaticText</key>
-			<true/>
-			<key>label</key>
-			<string>Numeric Cells</string>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSEditTextCell</string>
-			<key>default</key>
-			<string></string>
-			<key>defaults</key>
-			<string>net.ymlab.dev.Reveal2Loader</string>
-			<key>key</key>
-			<string>EditTextCell3</string>
-			<key>keyboard</key>
-			<string>phone</string>
-			<key>label</key>
-			<string>Phone</string>
-			<key>placeholder</key>
-			<string>Phone Number</string>
-			<key>PostNotification</key>
-			<string>net.ymlab.dev.Reveal2Loader-preferencesChanged</string>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSEditTextCell</string>
-			<key>default</key>
-			<string></string>
-			<key>defaults</key>
-			<string>net.ymlab.dev.Reveal2Loader</string>
-			<key>key</key>
-			<string>EditTextCel4</string>
-			<key>keyboard</key>
-			<string>numbers</string>
-			<key>label</key>
-			<string>Numeric</string>
-			<key>placeholder</key>
-			<string>Numbers</string>
-			<key>PostNotification</key>
-			<string>net.ymlab.dev.Reveal2Loader-preferencesChanged</string>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSGroupCell</string>
-			<key>footerText</key>
-			<string>Place text here to provide additional information about the cells above.</string>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSGroupCell</string>
-			<key>isStaticText</key>
-			<true/>
-			<key>label</key>
-			<string>Switch and Slider Cells</string>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSSwitchCell</string>
-			<key>default</key>
-			<true/>
-			<key>defaults</key>
-			<string>net.ymlab.dev.Reveal2Loader</string>
-			<key>key</key>
-			<string>SwitchCell5</string>
-			<key>label</key>
-			<string>Switch</string>
-			<key>PostNotification</key>
-			<string>net.ymlab.dev.Reveal2Loader-preferencesChanged</string>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSSliderCell</string>
-			<key>default</key>
-			<real>50</real>
-			<key>defaults</key>
-			<string>net.ymlab.dev.Reveal2Loader</string>
-			<key>key</key>
-			<string>SliderCell6</string>
-			<key>min</key>
-			<real>1</real>
-			<key>max</key>
-			<real>100</real>
-			<key>showValue</key>
-			<true/>
-			<key>PostNotification</key>
-			<string>net.ymlab.dev.Reveal2Loader-preferencesChanged</string>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSGroupCell</string>
-			<key>footerText</key>
-			<string>Place text here to provide additional information about the cells above.</string>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSGroupCell</string>
-			<key>isStaticText</key>
-			<true/>
-			<key>label</key>
-			<string>List Cell</string>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSLinkListCell</string>
-			<key>defaults</key>
-			<string>net.ymlab.dev.Reveal2Loader</string>
-			<key>key</key>
-			<string>LinkListCell7</string>
-			<key>label</key>
-			<string>List</string>
-			<key>detail</key>
-			<string>PSListItemsController</string>
-			<key>validTitles</key>
-			<array>
-				<string>Item 1</string>
-				<string>Item 2</string>
-				<string>Item 3</string>
-			</array>
-			<key>validValues</key>
-			<array>
-				<integer>1</integer>
-				<integer>2</integer>
-				<integer>3</integer>
-			</array>
-			<key>default</key>
-			<integer>1</integer>
-			<key>PostNotification</key>
-			<string>net.ymlab.dev.Reveal2Loader-preferencesChanged</string>
-		</dict>
-
-		<dict>
-			<key>cell</key>
-			<string>PSGroupCell</string>
-			<key>isStaticText</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSGroupCell</string>
-			<key>footerText</key>
-			<string>© 2019年 __MyCompanyName__</string>
-		</dict>
-	</array>
-	<key>title</key>
-	<string>Reveal2Loader</string>
-</dict>
-</plist>
+{
+	entry = {
+		cell = PSLinkCell;
+		label = Reveal;
+		icon = "reveal-logo.png";
+		items = (
+			{
+				bundle = AppList;
+				isController = 1;
+				cell = PSLinkCell;
+				label = "Enabled Applications";
+				ALSettingsPath = "/var/mobile/Library/Preferences/com.rheard.RHRevealLoader.plist";
+				ALSettingsKeyPrefix = "RHRevealEnabled-";
+				"ALSettingsDefaultValue" = "";
+				ALAllowsSelection = 1;
+				ALSectionDescriptors = (
+					{
+						items = ();
+						"footer-title" = "Select which applications to load Reveal into.";
+					},
+					{
+						title = "User Applications";
+						predicate = "isSystemApplication = FALSE";
+						"icon-size" = 29;
+						"suppress-hidden-apps" = 1;
+						"cell-class-name" = ALSwitchCell;
+					},
+					{
+						title = "System Applications";
+						predicate = "isSystemApplication = TRUE AND NOT (displayIdentifier IN {'com.iptm.bigboss.sbsettings', 'com.booleanmagic.overboard', 'eu.heinelt.ifile'})";
+						"icon-size" = 29;
+						"suppress-hidden-apps" = 1;
+						"cell-class-name" = ALSwitchCell;
+					},
+				);
+			},
+			{
+				bundle = "ExtensionListSettings";
+				isController = 1;
+				cell = PSLinkCell;
+				label = "Avaliable Extensions";
+				ALSettingsPath = "/var/mobile/Library/Preferences/com.rheard.RHRevealLoader.plist";
+				ALSettingsKeyPrefix = "RHRevealEnabled-";
+				"ALSettingsDefaultValue" = "";
+				ALAllowsSelection = 1;
+				ALSectionDescriptors = (
+					{
+						items = ();
+						"footer-title" = "Select which Plugins to load Reveal into.";
+					},
+					{
+						title = "Custom Keyboard";
+						predicate = "protocol contains 'keyboard-service'";
+						"icon-size" = 29;
+						"cell-class-name" = ELSwitchCell;
+					},
+					{
+						title = "share Extensions";
+						predicate = "protocol contains 'share-services'";
+						"icon-size" = 29;
+						"cell-class-name" = ELSwitchCell;
+					},
+					{
+						title = "AppleWatch App";
+						predicate = "protocol contains 'watchkit'";
+						"icon-size" = 29;
+						"cell-class-name" = ELSwitchCell;
+					},
+					{
+						title = "Today Extensions";
+						predicate = "protocol contains 'widget-extension'";
+						"icon-size" = 29;
+						"cell-class-name" = ELSwitchCell;
+					},
+					{
+						title = "Action Extensions";
+						predicate = "protocol contains 'ui-services'";
+						"icon-size" = 29;
+						"cell-class-name" = ELSwitchCell;
+					},
+					{
+						title = "PhotoEditing Extensions";
+						predicate = "protocol contains 'photo-editing'";
+						"icon-size" = 29;
+						"cell-class-name" = ELSwitchCell;
+					},
+				);
+			},
+			{
+				cell = PSGroupCell;
+				footerText = "This tweak is not officially supported. For more information about Reveal.app and runtime debugging see http://revealapp.com";
+			},
+			{
+				cell = PSGroupCell;
+				footerText = "\nReveal2Loader is released under BSD license.\nCopyright (c) 2017 Du Yongchao. All rights reserved.\n";
+			},
+			{
+				cell = PSGroupCell;
+				footerText = "\nRHRevealLoader\n\nCopyright (c) 2014 Richard Heard. All rights reserved.\n \nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n3. The name of the author may not be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n";
+			},
+		);
+	};
+}

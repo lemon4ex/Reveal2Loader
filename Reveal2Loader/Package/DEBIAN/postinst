@@ -3,3 +3,5 @@
 # This script is executed AFTER the Debian package is INSTALLED
 # For information about this file, see http://www.debian.org/doc/manuals/debian-faq/ch-pkg_basics.en.html#s-maintscripts.
 
+mv "/Library/Frameworks/RevealServer.framework/RevealServer" "/Library/MobileSubstrate/DynamicLibraries/RevealServer"
+ln -fs "/Library/MobileSubstrate/DynamicLibraries/RevealServer" "/Library/Frameworks/RevealServer.framework/RevealServer"
