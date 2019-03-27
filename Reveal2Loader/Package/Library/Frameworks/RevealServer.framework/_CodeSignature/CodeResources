@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/RevealServer.h</key>
 		<data>
-		e2S6Vuf8iJXurblvYWL8e3IMO7E=
+		JavE2LI6bNGfH9W90/bDxwIxVlg=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hD3V7tiXGKcqJIFK4LKpeO/AGbs=
+		geGJW0dGPi2gMM7A+UEYIGa88u8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Scripts/copy_and_codesign_revealserver.sh</key>
 		<data>
-		aQbLdf9lVnmDd2BfBMGsVPBPdb8=
+		yB2zXTggmRD0rra2Hbpxn2zfCRo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -27,11 +27,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			e2S6Vuf8iJXurblvYWL8e3IMO7E=
+			JavE2LI6bNGfH9W90/bDxwIxVlg=
 			</data>
 			<key>hash2</key>
 			<data>
-			i4zuiS2fsgwsoicYEzHuBx32JYfKW38gkopt/7FdINY=
+			weLK/65HyV1EiL9dd4xoAqQhf0/0r/Oy6os2nXCA+Ew=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -49,17 +49,17 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aQbLdf9lVnmDd2BfBMGsVPBPdb8=
+			yB2zXTggmRD0rra2Hbpxn2zfCRo=
 			</data>
 			<key>hash2</key>
 			<data>
-			UYSfYiTYxoDhVX7UwCYvPXGOWQ4Yrm5DzFoomMlSIMs=
+			SL0x5cGSOyS1RcojHFEmFX5IDfon/vO37cFsjSIX7LA=
 			</data>
 		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>
-		<key>^</key>
+		<key>^.*</key>
 		<true/>
 		<key>^.*\.lproj/</key>
 		<dict>
@@ -90,24 +90,12 @@
 			<key>weight</key>
 			<real>11</real>
 		</dict>
-		<key>^</key>
-		<dict>
-			<key>weight</key>
-			<real>20</real>
-		</dict>
 		<key>^(.*/)?\.DS_Store$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
 			<real>2000</real>
-		</dict>
-		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^.*</key>
 		<true/>
@@ -143,13 +131,6 @@
 			<true/>
 			<key>weight</key>
 			<real>20</real>
-		</dict>
-		<key>^[^/]+$</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^embedded\.provisionprofile$</key>
 		<dict>

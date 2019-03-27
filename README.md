@@ -1,7 +1,7 @@
 ### Reveal2Loader
 Dynamically loads Reveal into applications and plugins.
 
-This package uses the RevealServer.framework of Reveal v4(8796) , you can replace it to what you want.
+This package uses the RevealServer.framework of Reveal v21(11690) , you can replace it to what you want.
 
 ### Problem in iOS11 ~ iOS12
 The iOS11 ~ iOS12 jailbroken device does not take effect after installing Reveal2Loader. Because the dlopen function fails to load the RevealServer dynamic library. The error is as follows
