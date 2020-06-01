@@ -14,6 +14,7 @@ This code fixed it now.
 ![QQ20190321-000639@2x.png](https://github.com/lemon4ex/Reveal2Loader/blob/master/QQ20190321-000639@2x.png)
 ![QQ20190219-050112@2x.png](https://github.com/lemon4ex/Reveal2Loader/blob/master/QQ20190219-050112@2x.png)
 ![QQ20190321-002625@2x.png](https://github.com/lemon4ex/Reveal2Loader/blob/master/QQ20190321-002625@2x.png)
+![QQ20200602-023543@2x.png](https://github.com/lemon4ex/Reveal2Loader/blob/master/QQ20200602-023543@2x.png)
 
 ### Thanks
 * original version: https://github.com/zidaneno5/Reveal2Loader
