@@ -196,6 +196,7 @@
 				TargetAttributes = {
 					C91FD476221B45D20089920A = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = QW3A7VF8DU;
 					};
 				};
 			};
@@ -204,6 +205,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = C91FD46C221B45D20089920A;
@@ -228,7 +230,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\n\n# rm -rf \"${PROJECT_DIR}/${TARGET_NAME}/Package/usr/bin/*\"\n# cp -rf \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/PalmRiskSvr\" \"${PROJECT_DIR}/${TARGET_NAME}/Package/usr/bin/\"\n\n# 自动更新deb包版本号\necho $CONFIGURATION\nif [ \"Release\" == \"${CONFIGURATION}\" ]\nthen\npackInfoPlist=\"${PROJECT_DIR}/${TARGET_NAME}/PackageVersion.plist\"\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print PackageRevision\" \"${packInfoPlist}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :PackageRevision $buildNumber\" \"${packInfoPlist}\"\necho \"build number increase\"\nfi";
+			shellScript = "#!/bin/sh\n\n# rm -rf \"${PROJECT_DIR}/${TARGET_NAME}/Package/usr/bin/*\"\n# cp -rf \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/PalmRiskSvr\" \"${PROJECT_DIR}/${TARGET_NAME}/Package/usr/bin/\"\n\n# 自动更新deb包版本号\necho $CONFIGURATION\nif [ \"Release\" == \"${CONFIGURATION}\" ]\nthen\npackInfoPlist=\"${PROJECT_DIR}/${TARGET_NAME}/PackageVersion.plist\"\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print PackageRevision\" \"${packInfoPlist}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :PackageRevision $buildNumber\" \"${packInfoPlist}\"\necho \"build number increase\"\nfi\n";
 		};
 		C91FD475221B45D20089920A /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -241,7 +243,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/opt/EasyDev/bin/md --xcbp";
+			shellScript = "/opt/EasyDev/bin/ed --xcbp\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -341,7 +343,12 @@
 		C91FD498221B45D30089920A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					arm64e,
+				);
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = QW3A7VF8DU;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_BITCODE = NO;
@@ -362,13 +369,20 @@
 				);
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		C91FD499221B45D30089920A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					arm64e,
+				);
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = QW3A7VF8DU;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				ENABLE_BITCODE = NO;
@@ -389,6 +403,8 @@
 				);
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
