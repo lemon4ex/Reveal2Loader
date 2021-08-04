@@ -1,9 +1,9 @@
 Package: com.h4ck1n.Reveal2Loader
 Name: Reveal2Loader
-Version: 1.0-5
+Version: 1.0-6
 Description: dynamically loads Reveal v21(11690) into applications and plugins.
 Section: System
-Depends: firmware (>= 8.0), mobilesubstrate, applist, preferenceloader, com.zidaneno5.ExtensionList
+Depends: firmware (>= 8.0), mobilesubstrate, applist, preferenceloader
 Conflicts: com.rheard.rhrevealloader, com.rheard.reveal-loader
 Replaces: com.rheard.rhrevealloader, com.rheard.reveal-loader
 Priority: optional
