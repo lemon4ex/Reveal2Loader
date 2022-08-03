@@ -9,7 +9,7 @@ Compatible with `iOS8 ~ iOS14` jailbroken device.
 ### Manual Installation
 
 1. Download the '.deb' package [here](https://github.com/lemon4ex/Reveal2Loader/releases)
-2. Copy the deb file to your iOS device, such as `/var/mobile/Documents/Reveal2Loader_1.0-6_iphoneos-arm.deb`
+2. Copy the deb file to your iOS device, such as `/var/mobile/Documents/Reveal2Loader_1.0-4_iphoneos-arm.deb`
 3. SSH to your device, execute the following command:
   ```shell
   cd /var/mobile/Documents/
