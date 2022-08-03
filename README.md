@@ -6,6 +6,16 @@ This package uses the RevealServer.framework of Reveal v21(11690) , you can repl
 
 Compatible with `iOS8 ~ iOS14` jailbroken device.
 
+### Manual Installation
+
+1. Download the '.deb' package [here](https://github.com/lemon4ex/Reveal2Loader/releases)
+2. Copy the deb file to your iOS device, such as `/var/mobile/Documents/Reveal2Loader_1.0-6_iphoneos-arm.deb`
+3. SSH to your device, execute the following command:
+  ```shell
+  cd /var/mobile/Documents/
+  dpkg -i Reveal2Loader_1.0-4_iphoneos-arm.deb
+  ```
+
 ### Problem in iOS11 ~ iOS12
 
 The iOS11 ~ iOS12 jailbroken device does not take effect after installing Reveal2Loader. Because the dlopen function fails to load the RevealServer dynamic library. The error is as follows
